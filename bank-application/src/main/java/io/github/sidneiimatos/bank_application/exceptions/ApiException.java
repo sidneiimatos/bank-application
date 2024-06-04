@@ -4,12 +4,12 @@ import org.springframework.http.HttpStatus;
 
 import java.time.ZonedDateTime;
 
-public class RequestException {
+public class ApiException {
     private final String message;
     private final HttpStatus httpStatus;
     private final ZonedDateTime timestamps;
 
-    public RequestException(
+    public ApiException(
             String message,
             HttpStatus httpStatus,
             ZonedDateTime timestamps) {
